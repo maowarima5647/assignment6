@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+  <nav>
+<section class="w-11/12 mx-auto">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+        
+            <div class="flex">
+                <img class="w-7" src="./logo.webp" alt="">
+                <a class="btn btn-ghost text-xl">Peddy</a>
+            </div>
+         
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>home</a></li>
+            <li>
+            
+                <summary>about</summary>
+              
+             
+            </li>
+            <li><a>contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+         <img src="./icons8-user-32.png" alt="">
+        </div>
+      </div>
+
+</section>
+
+
+  </nav>
+
+
+<main class="w-11/12 mx-auto ">
+<section class=" text-center">
+
+<h5 class=" text-gray-500">Bringing Famliles Together</h5>
+<h1 class="text-5xl font-bold my-5"> Your path to Adoption <br> Starats Here</h1>
+<p class="text-xl">Animal Humane Society's free Pet Helpline provides caring, compassionate advice <br>
+    and resources to address whatever animal issues you may be experiencing.  </p>
+
+    <button class="btn btn-success my-3"> View details</button>
+
+<div class="border-2 border-black-700">
+
+    <img src="./pet.webp" alt="">
+
+</div>
+
+</section>
+<!-------button section-->
+<section class=" text-center">
+  
+  <h1 class="text-3xl font-bold my-5"> Adopt Your BestFriend</h1>
+  <h5 class=" text-2xl text-gray-500">Find Your Perfect Dog or Puppy Breed · Affenpinscher Dogs & Puppies ·
+     View available for adoption r</h5>
+
+
+
+
+<div id="catagoris" class="flex justify-between py-5  justify-centent">
+</div>
+<!----------4 button dynamic-------->
+
+<div class="grid mt-5 border py-5 px-3">
+<div id="cardContainer" class=" grid grid-cols-1 lg:grid-cols-3 flex items-center gap-3"></div>
+ <div  class=" hidden lg:flex col-span-4 grid lg:grid-cols-0 "></div> 
+</div>
+
+
+
+
+
+
+
+
+</section>
+
+</main>
+
+
+  <footer class="footer bg-neutral text-neutral-content p-10 mx-auto items-center">
+    <nav class="font-white-500">
+      <h6 class="footer-title">  
+        
+        <div class="flex">
+          <img src="./logo.webp" alt="">
+          <a class="btn btn-ghost text-xl">Peddy</a>
+      </div>
+      </h6>
+      <a class="link link-hover">phone +2136751233</a>
+      <a class="link link-hover">Email mawa234512gmail.com</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+<div  class="flex w-10">
+  <img src="https://img.icons8.com/?size=48&id=p62ASPK2Kpqp&format=png" alt="">
+<img src="https://img.icons8.com/?size=80&id=YtpeVQhQ8USm&format=png" alt="">
+<img class="img-thumbnail" src="https://img.icons8.com/?size=48&id=9a46bTk3awwI&format=png" alt="">
+<img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="">
+
+</div>
+
+
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">facebook</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title text-xl">drop a massage</h6>
+      <button class="btn btn-active px-11">Default</button>
+      <button class="btn btn-success px-11">Subscribe</button>
+    </nav>
+  </footer>
+
+
+<!-- Open the modal using ID.showModal() method -->
+<button id="showmodeldata" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modalcontent"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!----adopt modal-->
+
+
+<button id="showadoptmodal" class="btn hidden" onclick="showadopt.showModal()">open modal</button>
+<dialog id="showadopt" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   <div  id="adoptcontent">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+
+
+
+<script src="./index.js"></script>
+
+
+
+
+</body>
+</html>
